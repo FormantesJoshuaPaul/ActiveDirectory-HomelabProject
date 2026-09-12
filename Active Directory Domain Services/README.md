@@ -16,3 +16,13 @@ Services:
 - Active Directory Domain Services
 - DNS
 - Global Catalog
+
+Verified deployment using PowerShell:
+- Get-ADDomain
+- Get-ADDomainController
+- Get-Service DNS
+- Get-Service NTDS
+
+Tested DNS resolution for adlab.test domain:
+- nslookup adlab.test
+  
