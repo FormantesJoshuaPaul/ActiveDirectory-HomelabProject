@@ -1,2 +1,3 @@
-# ActiveDirectory-HomelabProject
-Creating a homelab to learn more about Active Directory and all related services!
+Hands-on homelab to learn about Active Directory, Windows administration, Powershell, networking, and troubleshooting.
+
+- will update as homelab develops!
