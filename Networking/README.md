@@ -28,3 +28,21 @@ Connectivity to the VirtualBox NAT gateway was tested with:
 powershell
 ping 10.0.2.2
 
+Internet DNS resolution was tested with:
+
+nslookup google.com
+
+External connectivity was tested with:
+ping google.com
+
+Results
+
+The NAT interface successfully provided internet connectivity while the Host-only interface provided the private lab network.
+
+Lessons Learned
+- Difference between NAT and Host-only networking
+- Static vs DHCP addressing
+- Basic DNS resolution
+- Difference between connectivity and name resolution
+
+
