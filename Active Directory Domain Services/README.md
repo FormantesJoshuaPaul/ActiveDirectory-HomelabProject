@@ -114,6 +114,14 @@ The domain join was verified from the client using powershell commands:
 It was then verified on DC01's side by checking whether CLIENT01 exists under 
 Server Manager > Tools > Active Directory Users and Computers > Computers folder
 
+User Authentication
+
+A test domain user was authenticated against the adlab.test domain from the domain-joined Windows 11 client.
+
+The account was verified using powershell commands:
+- `whoami`
+- `whoami /groups`
+
 Lessons Learned
 
 This exercise provided hands-on experience with:
