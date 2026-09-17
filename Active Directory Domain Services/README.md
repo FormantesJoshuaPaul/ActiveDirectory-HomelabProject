@@ -93,25 +93,26 @@ Ethernet 2	Host-only	192.168.56.10	Private AD network
 
 Domain-Joined CLIENT01
 
-A Windows 11 Pro virtual machine CLIENT01 was configured on the
-private 192.168.56.0/24 network and configured to use DC01 192.168.56.10 as its DNS server.
+A Windows 11 Pro virtual machine CLIENT01 was configured on the private 192.168.56.0/24 network and configured to use DC01 192.168.56.10 as its DNS server.
 
 The client was successfully joined to the adlab.test domain.
 
 CLIENT01 Configuration
 
-Hostname: CLIENT01
-IP address: 192.168.56.20
-DNS server: 192.168.56.10 (DC01)
-Domain: adlab.test
+- Hostname: CLIENT01
+- IP address: 192.168.56.20
+- DNS server: 192.168.56.10 (DC01)
+- Domain: adlab.test
 
 Validation
 
 The domain join was verified from the client using powershell commands:
 
-`whoami` and `Get-CimInstance Win32_ComputerSystem | Select-Object Name,Domain,PartOfDomain`
+- `whoami`
+- `Get-CimInstance Win32_ComputerSystem | Select-Object Name,Domain,PartOfDomain`
 
-It was then verified on DC01's side by checking whether CLIENT01 exists under Server Manager > Tools > Active Directory Users and Computers > Computers folder
+It was then verified on DC01's side by checking whether CLIENT01 exists under 
+Server Manager > Tools > Active Directory Users and Computers > Computers folder
 
 Lessons Learned
 
