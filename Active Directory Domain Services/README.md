@@ -146,6 +146,17 @@ The policy was refreshed and verified on CLIENT01 using powershell command:
 - `gpupdate /force`
 - `gpresult /r`
 
+Department Transfer Scenario
+
+Alice Tan was initially placed in the IT OU and received the `IT - User Policy Test` GPO.
+
+Alice was then transferred to the HR OU.
+After running:
+
+`gpupdate /force`
+
+She is able to enter the Run diaglog menu and her Computer icon is now removed from the Desktop.
+
 Lessons Learned
 
 This exercise provided hands-on experience with:
