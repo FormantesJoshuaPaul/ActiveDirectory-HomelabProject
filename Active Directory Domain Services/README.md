@@ -122,6 +122,30 @@ The account was verified using powershell commands:
 - `whoami`
 - `whoami /groups`
 
+# Group Policy
+
+## Objective
+
+Create and test a Group Policy Object (GPO) that applies a user
+configuration to users within the IT Organizational Unit.
+
+Lab Scenario
+
+A test user Alice Tan, is located in: Singapore → IT
+A GPO named IT - User Policy Test was then linked to the IT OU.
+
+Configuration
+
+The following User Configuration policy was enabled:
+
+- Remove Run menu from Start Menu
+
+Validation
+
+The policy was refreshed and verified on CLIENT01 using powershell command:
+- `gpupdate /force`
+- `gpresult /r`
+
 Lessons Learned
 
 This exercise provided hands-on experience with:
