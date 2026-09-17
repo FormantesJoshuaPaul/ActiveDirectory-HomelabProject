@@ -32,5 +32,23 @@ The project will aim to provide practical experience with:
   Project status
   ** In Progress **
 
+  Current architecture:
+
+                    adlab.test
+                         │
+                  ┌──────▼──────┐
+                  │    DC01     │
+                  │ AD DS + DNS │
+                  │192.168.56.10│
+                  └──────┬──────┘
+                         │
+                  Host-only LAN
+                         │
+                  ┌──────▼──────┐
+                  │  CLIENT01   │
+                  │ Windows 11  │
+                  │192.168.56.20│
+                  └─────────────┘
+
   
  
